@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux'; 
 
-class AllMemo extends Component {
+import Memo from './Memo';
+
+class AllMemos extends Component {
   render() {
     return (
       <div>
-        <h1>All Memo</h1>
+        <h1>All Memos</h1>
         {/* {console.log(this.props.posts)} */}
-        {this.props.posts.map((post) => <post key={post.id} post={post} />)}
+        {this.props.posts.map((post) => <Memo key={post.id} post={post} />)}
       </div>
     );
   }
@@ -20,4 +21,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(AllMemo);
+export default connect(mapStateToProps)(AllMemos);

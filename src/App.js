@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import MemoForm from './MemoForm';
-import AllMemo from './AllMemo';
+import AllMemos from './AllMemos';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
         <MemoForm />
-        <AllMemo />
+        <AllMemos />
       </div>
     );
   }

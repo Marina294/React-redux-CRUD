@@ -11,10 +11,10 @@ class MemoForm extends Component {
       title,
       message
     }
-    console.log(data)
+    // console.log(data)
     
     this.props.dispatch({
-      type:'ADD_POST',
+      type:'ADD_MEMO',
       data
     });
     this.getTitle.value = '';
