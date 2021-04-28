@@ -9,7 +9,8 @@ class MemoForm extends Component {
     const data = {
       id: new Date(),
       title,
-      message
+      message,
+      editing:false
     }
     // console.log(data)
     

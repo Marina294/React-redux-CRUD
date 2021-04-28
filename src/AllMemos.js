@@ -3,13 +3,21 @@ import { connect } from 'react-redux';
 
 import Memo from './Memo';
 
+import EditComponent from './EditComponent';
+
 class AllMemos extends Component {
   render() {
     return (
       <div>
         <h1>All Memos</h1>
         {/* {console.log(this.props.posts)} */}
-        {this.props.posts.map((post) => <Memo key={post.id} post={post} />)}
+        {/* {this.props.posts.map((post) => <Memo key={post.id} post={post} />)} */}
+        {this.props.posts.map((post) => (
+          <div key={post.id}>
+            {post.editing ? <EditComponent key={post.id} post={post} /> :
+            <Memo key={post.id} post={post}/>}
+          </div>
+        ))}
       </div>
     );
   }
