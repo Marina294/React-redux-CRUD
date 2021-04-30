@@ -113,21 +113,6 @@ body {
   max-width: 90%;
 }
 
-.button_round {
-  padding: 20px 20px;
-  border-radius: 100%;
-  text-align: center;
-  font-family: "quatro-slab", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 1.2rem;
-  color: #fff;
-  border: none;
-  background-color: #f8788f;
-  outline: none;
-  cursor: pointer;
-}
-
 ::-webkit-input-placeholder {
   color: #a59e9e;
   opacity: 1;
@@ -157,14 +142,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.note_heading {
-  font-family: "jakob", sans-serif;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: #311c20;
-}
-
 .note {
   background: #f8788f;
   max-width: 400px;
@@ -175,6 +152,14 @@ body {
   margin-bottom: 25px;
   -webkit-box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
           box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
+}
+
+.note_heading {
+  font-family: "jakob", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #311c20;
 }
 
 .note_title {
@@ -210,6 +195,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.button_round {
+  padding: 20px 20px;
+  border-radius: 100%;
+  text-align: center;
+  font-family: "quatro-slab", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  color: #fff;
+  border: none;
+  background-color: #f8788f;
+  outline: none;
+  cursor: pointer;
 }
 
 .button_text {

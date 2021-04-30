@@ -46,15 +46,15 @@ body {
   align-items: center;
   width: 100%;
   display: flex;
+  & h1 {
+    margin: 0;
+    font-family: $font-title;
+    font-weight: 800;
+    font-size: 2.1rem;
+    color: $color-primary;
+  }
 }
 
-.navbar h1 {
-  margin: 0;
-  font-family: $font-title;
-  font-weight: 800;
-  font-size: 2.1rem;
-  color: $color-primary;
-}
 
 // add note
 
@@ -74,9 +74,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.form input {
+& input {
   margin-bottom: 1.5rem;
   padding:16px 24px 16px 24px;
   border-radius: 10px;
@@ -92,7 +91,7 @@ body {
   width: 90%;
 }
 
-.form textarea {
+& textarea {
   margin-bottom: 2rem;
   padding:16px 24px 80px 24px;
   border-radius: 10px;
@@ -102,36 +101,16 @@ body {
   font-weight: 400;
   font-style: normal;
   color: $color-text;
-  // box-shadow: 0 4px 4px 0 rgba(46, 60, 73, 0.08);
   outline:none;
   width: 90%;
   max-width: 90%;
 }
-
-.button_round {
-  padding:20px 20px;
-  border-radius: 100%;
-  text-align: center;
-  font-family: $font-text;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 1.2rem;
-  color: $color-white;
-  border: none;
-  background-color: $color-primary;
-  outline: none;
-  cursor: pointer;
-  }
-
-// .button_round:hover {
-//   transform:scale(1.1,1.1);
-// }
+}
 
 ::placeholder {
   color:$color-text-light;
   opacity: 1; 
 }
-
 
 
 // all notes
@@ -146,14 +125,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.note_heading {
-  font-family: $font-title;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: $color-text;
-}
-
 
 .note {
   background:$color-primary;
@@ -164,80 +135,96 @@ body {
   padding:30px;
   margin-bottom: 25px;
   box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
-}
 
+  &_heading {
+    font-family: $font-title;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: $color-text;
+  }
 
-
-.note_title {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 2.8rem;
-  line-height: 3.4rem;
-  color: $color-white;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-
-.note_message {
-margin: 2rem 0rem 2rem 0rem;
-text-align:center;
-word-wrap: break-word;
-}
-
-.note_message p{
-  font-family: $font-text;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-  color: $color-text;
-  text-align: center;
+  &_title {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    color: $color-white;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  &_message {
+  margin: 2rem 0rem 2rem 0rem;
+  text-align:center;
   word-wrap: break-word;
   }
+  
+  &_message p{
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: $color-text;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
+// buttons
 
 .control-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.button_text {
-  margin-right: auto;
-  font-family: $font-text;
-  font-weight: 800;
-  font-size: 2rem;
-  line-height: 1.5rem;
-  color: $color-white;
-  text-align: center;
-  background: $color-primary;
-  border: none;
-  padding: 15px 15px;
-  border-radius: 100%;
-  cursor: pointer;
-  outline: none;
-  }
-
-  // .button_text:hover {
-  //   transform:scale(1.1,1.1);
-  // }
+.button {
+  &_round {
+    padding:20px 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    color: $color-white;
+    border: none;
+    background-color: $color-primary;
+    outline: none;
+    cursor: pointer;
+    }
   
-
-.button_delete {
-  margin-right: auto;
-  font-family: $font-text;
-  font-weight: 800;
-  font-size: 2rem;
-  line-height: 1.5rem;
-  color: $color-white;
-  text-align: center;
-  background: $color-primary;
-  border: none;
-  padding: 15px 15px;
-  border-radius: 100%;
-  cursor: pointer;
-  outline: none;
+  &_text {
+    margin-right: auto;
+    font-family: $font-text;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    color: $color-white;
+    text-align: center;
+    background: $color-primary;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  &_delete {
+    margin-right: auto;
+    font-family: $font-text;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    color: $color-white;
+    text-align: center;
+    background: $color-primary;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+  }
 }
 
-// .button_delete:hover {
-//   transform:scale(1.1,1.1);
-// }
 
