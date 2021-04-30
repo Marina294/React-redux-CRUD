@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { motion } from "framer-motion";
+import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
+import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
 
 class Memo extends Component {
   render() {
@@ -21,17 +23,21 @@ class Memo extends Component {
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.9 }} 
           > 
-          <button className="button_text"
+          <EditOutlinedIcon className="button_text"
+            onClick={() => this.props.dispatch({type: 'EDIT_MEMO', id: this.props.post.id})} />
+          {/* <button className="button_text"
             onClick={() => this.props.dispatch({type: 'EDIT_MEMO', id: this.props.post.id})}>
-            Edit</button>
+            Edit</button> */}
         </motion.div>
         <motion.div 
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.9 }} 
-          > 
-          <button className="button_delete"
+        > 
+          <DeleteOutlinedIcon className="button_delete"
+            onClick={() => this.props.dispatch({type: 'DELETE_MEMO', id: this.props.post.id})} />
+          {/* <button className="button_delete"
             onClick={() => this.props.dispatch({type: 'DELETE_MEMO', id: this.props.post.id})}>
-            ×</button>
+            ×</button> */}
         </motion.div>       
         </div>
         </motion.div>

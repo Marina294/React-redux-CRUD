@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { motion } from "framer-motion";
+import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined';
 
 class EditComponent extends Component {
   handleEdit = (e) => {
@@ -20,7 +22,15 @@ class EditComponent extends Component {
           defaultValue={this.props.post.title} placeholder='Note Title' />
           <textarea required row='5' ref={(input) => this.getMessage = input}
           defaultValue={this.props.post.message} cols='28' placeholder='Note deatil' />
-          <button className='button_text'>Update</button>
+          <motion.div 
+            className='button_text'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
+          > 
+            <button className='button_text'>
+              <CheckOutlinedIcon />
+            </button>
+          </motion.div>
         </form>
       </div>
     );

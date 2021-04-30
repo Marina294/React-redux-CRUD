@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { motion } from "framer-motion";
-
+import AddOutlinedIcon from '@material-ui/icons/AddOutlined';
 
 class MemoForm extends Component {
   handleSubmit = (e) => {
@@ -33,7 +33,10 @@ class MemoForm extends Component {
             whileHover={{ scale: 1.1 }} 
             whileTap={{ scale: 0.9 }} 
           > 
-            <button className='button_round'>+</button>
+          {/* <Icon className="fa fa-plus button_round"  style={{ fontSize: 20 }} /> */}
+            <button className='button_round'>
+              <AddOutlinedIcon />
+            </button>
           </motion.div>
         </form>
       </div>
