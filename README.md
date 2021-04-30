@@ -1,3 +1,17 @@
+# Note Down Something
+
+##What is this app?
+This app is for taking notes.
+
+##What I learned in this project
+How to develop CRUD app by redux.
+
+### API
+Material-UI Icon API
+Frame Motion API
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
