@@ -1,9 +1,9 @@
 # Note Down Something
 
-##What is this app?
+## What is this app?
 This app is for taking notes.
 
-##What I learned in this project
+## What I learned in this project
 How to develop CRUD app by redux.
 
 ### API
