@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { motion } from "framer-motion";
 
+
 class MemoForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();

@@ -9,13 +9,14 @@ class AllMemos extends Component {
     return (
       <div className='all_notes'>
         <div className='section'>
-          <motion.h2
+          <motion.h1
+          className='note_heading'
           initial={{ y: 600 }}
           animate={{ y: 0 }}
           transition={{ type: "spring", duration: 0.5 }}
           >
-            <h2 className='note_heading'>Notes</h2>
-          </motion.h2>
+            Notes
+          </motion.h1>
         </div>
         {/* {console.log(this.props.posts)} */}
         {/* {this.props.posts.map((post) => <Memo key={post.id} post={post} />)} */}

@@ -6,8 +6,8 @@ class Memo extends Component {
   render() {
     return (
       <div >
-                          <motion.div
-                  className='note'
+        <motion.div
+          className='note'
           initial={{ y: 600 }}
           animate={{ y: 0 }}
           transition={{ type: "spring", duration: 0.5 }}
