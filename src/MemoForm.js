@@ -23,16 +23,11 @@ class MemoForm extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Create Memo</h1>
-        <form onSubmit={this.handleSubmit}>
-          <input required type="text" ref={(input) => this.getTitle = input } placeholder="Enter Memo Title" />
-          <br />
-          <br />
-          <textarea required row="5" ref={(input) => this.getMessage = input} cols="28" placeholder="Enter Memo Detail" />
-          <br />
-          <br />
-          <button>Add New Memo</button>
+      <div className='note-container'>
+        <form className='form' onSubmit={this.handleSubmit}>
+          <input required type='text' ref={(input) => this.getTitle = input } placeholder="Note Title" />
+          <textarea required row='10' cols="24" ref={(input) => this.getMessage = input} placeholder="Note Detail" />
+          <button className='button_round'>+</button>
         </form>
       </div>
     );

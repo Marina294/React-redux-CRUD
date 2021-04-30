@@ -14,17 +14,13 @@ class EditComponent extends Component {
   }
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleEdit}>
+      <div className='note'>
+        <form className='form' onSubmit={this.handleEdit}>
           <input required type='text' ref={(input) => this.getTitle = input}
-          defaultValue={this.props.post.title} placeholder='Enter Memo Title' />
-          <br />
-          <br />
+          defaultValue={this.props.post.title} placeholder='Note Title' />
           <textarea required row='5' ref={(input) => this.getMessage = input}
-          defaultValue={this.props.post.message} cols='28' placeholder='Enter Memo' />
-          <br />
-          <br />
-          <button>Update</button>
+          defaultValue={this.props.post.message} cols='28' placeholder='Note deatil' />
+          <button className='button_text'>Update</button>
         </form>
       </div>
     );

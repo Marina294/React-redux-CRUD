@@ -8,8 +8,10 @@ import EditComponent from './EditComponent';
 class AllMemos extends Component {
   render() {
     return (
-      <div>
-        <h1>All Memos</h1>
+      <div className='all_notes'>
+        <div className='section'>
+        <h2 className='note_heading'>All Notes</h2>
+        </div>
         {/* {console.log(this.props.posts)} */}
         {/* {this.props.posts.map((post) => <Memo key={post.id} post={post} />)} */}
         {this.props.posts.map((post) => (

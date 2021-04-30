@@ -5,7 +5,10 @@ import AllMemos from './AllMemos';
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div>
+        <div className="navbar">
+          <h1>Note Down Something</h1>
+        </div>
         <MemoForm />
         <AllMemos />
       </div>
@@ -13,11 +16,10 @@ class App extends Component {
   }
 }
 
-
 // class App extends Component {
 //   render() {
 //     return (
-//       <div className='App'>
+//       <div>
 //         <h1>HELLO</h1>
 //       </div>
 //     );

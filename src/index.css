@@ -1,13 +1,243 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://use.typekit.net/mzm8rqr.css");
+@import url("https://use.typekit.net/lrv0mwz.css");
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "quatro-slab", sans-serif;
+  background: #fdf9f9;
 }
+
+.navbar {
+  margin: 3rem 0.2rem 2rem 0.2rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-family: "jakob", sans-serif;
+  font-weight: 800;
+  font-size: 2.1rem;
+  color: #f8788f;
+}
+
+.note-container {
+  margin: 0rem auto;
+  margin-bottom: 2.5rem;
+  background: #fff;
+  padding: 50px 50px 40px 50px;
+  max-width: 600px;
+  width: 55%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 8px 0 rgba(83, 68, 71, 0.1);
+          box-shadow: 0 8px 8px 0 rgba(83, 68, 71, 0.1);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form input {
+  margin-bottom: 1.5rem;
+  padding: 16px 24px 16px 24px;
+  border-radius: 10px;
+  border: 1px solid #ffd6df;
+  font-family: "quatro-slab", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #311c20;
+  outline: none;
+  max-width: 600px;
+  width: 90%;
+}
+
+.form textarea {
+  margin-bottom: 2rem;
+  padding: 16px 24px 80px 24px;
+  border-radius: 10px;
+  border: 1px solid #ffd6df;
+  font-family: "quatro-slab", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #311c20;
+  outline: none;
+  width: 90%;
+  max-width: 90%;
+}
+
+.button_round {
+  padding: 20px 20px;
+  border-radius: 100%;
+  text-align: center;
+  font-family: "quatro-slab", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  color: #fff;
+  border: none;
+  background-color: #f8788f;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #a59e9e;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #a59e9e;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #a59e9e;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #a59e9e;
+  opacity: 1;
+}
+
+.all_notes {
+  margin-bottom: 5rem;
+  padding-top: 1.5rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.note_heading {
+  font-family: "jakob", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #311c20;
+}
+
+.note {
+  background: #f8788f;
+  max-width: 400px;
+  width: 70%;
+  min-height: 14rem;
+  margin: 0 auto;
+  padding: 30px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
+          box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
+}
+
+.note_title {
+  font-family: "jakob", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  color: #fff;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.note_message {
+  margin: 2rem 0rem 2rem 0rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.note_message p {
+  font-family: "quatro-slab", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: #311c20;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button_text {
+  margin-right: auto;
+  font-family: "quatro-slab", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  text-align: center;
+  background: #f8788f;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_delete {
+  margin-left: auto;
+  font-family: "quatro-slab", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  text-align: center;
+  background: #f8788f;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  outline: none;
+}
+/*# sourceMappingURL=index.css.map */

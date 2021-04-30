@@ -1,0 +1,232 @@
+@import url("https://use.typekit.net/mzm8rqr.css");
+@import url("https://use.typekit.net/lrv0mwz.css");
+
+$color-primary: #f8788f;
+$color-background: #fdf9f9;
+$color-gray: #ffd6df;
+$color-text: #311c20;
+$color-text-light: #a59e9e;
+$color-white: #fff;
+
+$font-title: 'jakob', sans-serif;
+$font-text: 'quatro-slab', sans-serif;
+$transition: all 0.3s linear;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span
+  {
+
+  margin-block-start:0; 
+  margin-block-end:0; 
+  margin-inline-start:0; 
+  margin-inline-end:0;
+  padding-block-start:0; 
+  padding-block-end:0; 
+  padding-inline-start:0; 
+  padding-inline-end:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-text;
+  background: $color-background;
+}
+
+
+//  Navi 
+
+.navbar {
+  margin: 3rem 0.2rem 2rem 0.2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-family: $font-title;
+  font-weight: 800;
+  font-size: 2.1rem;
+  color: $color-primary;
+}
+
+// add note
+
+.note-container {
+  margin: 0rem auto;
+  margin-bottom: 2.5rem;
+  background: $color-white;
+  padding: 50px 50px 40px 50px;
+  max-width: 600px;
+  width: 55%;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(83, 68, 71, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  margin-bottom: 1.5rem;
+  padding:16px 24px 16px 24px;
+  border-radius: 10px;
+  border: 1px solid $color-gray;
+  font-family: $font-text;
+  font-size:16px;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-text;
+  // box-shadow: 0 4px 4px 0 rgba(46, 60, 73, 0.08);
+  outline:none;
+  max-width: 600px;
+  width: 90%;
+}
+
+.form textarea {
+  margin-bottom: 2rem;
+  padding:16px 24px 80px 24px;
+  border-radius: 10px;
+  border: 1px solid $color-gray;
+  font-family: $font-text;
+  font-size:14px; 
+  font-weight: 400;
+  font-style: normal;
+  color: $color-text;
+  // box-shadow: 0 4px 4px 0 rgba(46, 60, 73, 0.08);
+  outline:none;
+  width: 90%;
+  max-width: 90%;
+}
+
+.button_round {
+  padding:20px 20px;
+  border-radius: 100%;
+  text-align: center;
+  font-family: $font-text;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  color: $color-white;
+  border: none;
+  background-color: $color-primary;
+  outline: none;
+  cursor: pointer;
+  }
+
+::placeholder {
+  color:$color-text-light;
+  opacity: 1; 
+}
+
+
+
+// all notes
+
+.all_notes {
+  margin-bottom: 5rem;
+  padding-top: 1.5rem;
+  // background-color: #e1dfe6;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+
+}
+
+.note_heading {
+  font-family: $font-title;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: $color-text;
+}
+
+
+.note {
+  background:$color-primary;
+  max-width: 400px;
+  width:70%;
+  min-height: 14rem;
+  margin:0 auto;
+  padding:30px;
+  margin-bottom: 25px;
+  box-shadow: 10px 10px 10px 0 rgba(242, 120, 143, 0.1);
+}
+
+
+
+.note_title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  color: $color-white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+.note_message {
+margin: 2rem 0rem 2rem 0rem;
+text-align:center;
+word-wrap: break-word;
+}
+
+.note_message p{
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: $color-text;
+  text-align: center;
+  word-wrap: break-word;
+  }
+
+.control-buttons {
+  display: flex;
+}
+
+.button_text {
+  margin-right:auto;
+  font-family: $font-text;
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: $color-white;
+  text-align: center;
+  background: $color-primary;
+  border:none;
+  padding:15px 15px;
+  border-radius:100%;
+  cursor:pointer;
+  outline: none;
+  }
+
+.button_delete {
+  margin-left:auto;
+  font-family: $font-text;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: $color-white;
+  text-align: center;
+  background: $color-primary;
+  border:none;
+  padding:15px 15px;
+  border-radius:100%;
+  cursor:pointer;
+  outline: none;
+}
+
