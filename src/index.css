@@ -207,6 +207,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button_text {
@@ -226,7 +229,7 @@ body {
 }
 
 .button_delete {
-  margin-left: auto;
+  margin-right: auto;
   font-family: "quatro-slab", sans-serif;
   font-weight: 800;
   font-size: 2rem;

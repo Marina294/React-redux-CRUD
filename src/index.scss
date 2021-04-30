@@ -10,7 +10,6 @@ $color-white: #fff;
 
 $font-title: 'jakob', sans-serif;
 $font-text: 'quatro-slab', sans-serif;
-$transition: all 0.3s linear;
 
 h1,
 h2,
@@ -20,7 +19,6 @@ h5,
 p,
 span
   {
-
   margin-block-start:0; 
   margin-block-end:0; 
   margin-inline-start:0; 
@@ -125,6 +123,10 @@ body {
   cursor: pointer;
   }
 
+// .button_round:hover {
+//   transform:scale(1.1,1.1);
+// }
+
 ::placeholder {
   color:$color-text-light;
   opacity: 1; 
@@ -142,7 +144,6 @@ body {
 
 .section {
   margin-bottom: 1.5rem;
-
 }
 
 .note_heading {
@@ -196,10 +197,11 @@ word-wrap: break-word;
 
 .control-buttons {
   display: flex;
+  justify-content: space-between;
 }
 
 .button_text {
-  margin-right:auto;
+  margin-right: auto;
   font-family: $font-text;
   font-weight: 800;
   font-size: 1.2rem;
@@ -207,15 +209,20 @@ word-wrap: break-word;
   color: $color-white;
   text-align: center;
   background: $color-primary;
-  border:none;
-  padding:15px 15px;
-  border-radius:100%;
-  cursor:pointer;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 100%;
+  cursor: pointer;
   outline: none;
   }
 
+  // .button_text:hover {
+  //   transform:scale(1.1,1.1);
+  // }
+  
+
 .button_delete {
-  margin-left:auto;
+  margin-right: auto;
   font-family: $font-text;
   font-weight: 800;
   font-size: 2rem;
@@ -223,10 +230,13 @@ word-wrap: break-word;
   color: $color-white;
   text-align: center;
   background: $color-primary;
-  border:none;
-  padding:15px 15px;
-  border-radius:100%;
-  cursor:pointer;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 100%;
+  cursor: pointer;
   outline: none;
 }
 
+// .button_delete:hover {
+//   transform:scale(1.1,1.1);
+// }

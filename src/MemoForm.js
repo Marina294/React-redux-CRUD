@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import { motion } from "framer-motion";
 
 class MemoForm extends Component {
   handleSubmit = (e) => {
@@ -27,7 +28,12 @@ class MemoForm extends Component {
         <form className='form' onSubmit={this.handleSubmit}>
           <input required type='text' ref={(input) => this.getTitle = input } placeholder="Note Title" />
           <textarea required row='10' cols="24" ref={(input) => this.getMessage = input} placeholder="Note Detail" />
-          <button className='button_round'>+</button>
+          <motion.div 
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
+          > 
+            <button className='button_round'>+</button>
+          </motion.div>
         </form>
       </div>
     );
